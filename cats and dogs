@@ -1,0 +1,12 @@
+t=int(input())
+for i in range(t):
+    c,d,l=map(int,input().split())
+    maxi=4*(c+d)
+    if(d*2<c):
+        mini=4*(c-d)
+    else:
+        mini=4*d
+    if(l%4==0 and l>=min(i) and l<=max(i)):
+        print('yes')
+    else:
+        print('no')
